@@ -1,4 +1,5 @@
 total_distance = 0
+similarity_score = 0
 
 left_values = []
 right_values = []
@@ -17,4 +18,9 @@ for left, right in zip(left_values, right_values):
     total_distance += abs(left - right)
 
 print("Total: ", total_distance)
+
+for num in left_values:
+    similarity_score += num * right_values.count(num)
+
+print("Similarity Score: ", similarity_score)
 
