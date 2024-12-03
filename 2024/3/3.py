@@ -67,3 +67,4 @@ with open("input.txt", "r") as file:
 
 
 print("Total Conditional: ", sum(conditional_results))
+
