@@ -10,11 +10,9 @@ with open("./input.txt", "r") as file:
         while rotation > 0:
             if direction == "L":
                 position -= 1
-                rotation -= 1
 
             if direction == "R":
                 position += 1
-                rotation -= 1
 
             if position == 100:
                 position = 0
@@ -24,5 +22,8 @@ with open("./input.txt", "r") as file:
 
             if position == -1:
                 position = 99
+
+            rotation -= 1
+
 
 print(count)
